@@ -128,7 +128,6 @@ while Continue:
                 pygame.display.flip()
             if event.key == pygame.K_p:
                 # Playing main background track when game is started
-
                 if Run == 1:
                     Person = 1
                     Run += 1
@@ -136,7 +135,6 @@ while Continue:
                 Computer = 1
                 if Run == 1:
                     Run += 1
-
             if event.key == pygame.K_e:
                 # Playing main background track when game is started
                 winsound.PlaySound("/Users/keith/Downloads/backtrack.wav", winsound.SND_ASYNC | winsound.SND_LOOP)

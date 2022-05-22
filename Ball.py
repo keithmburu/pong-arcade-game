@@ -25,9 +25,11 @@ class Ball(pygame.sprite.Sprite):
         # Fetch the rectangle object which is the ball
         self.rect = self.image.get_rect()
 
+
     def update(self):# this functions will update the position of the ball
         self.rect.x += self.velocity[0]
         self.rect.y += self.velocity[1]
+
 
     def bounce(self):#this functions changes the velocity of the ball
         self.velocity[0] = -self.velocity[0]#the x-component of the velocity is reversed
